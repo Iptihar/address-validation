@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<link rel="stylesheet" type="text/css" 
+	href="{{ url_for('static', filename='templates/main.css') }}"/>
+
+<h1>Now for your Shipping Information!</h1>
+<img
+    src="http://www.mail-stop-and-more.com/wp-content/uploads/2016/12/intl-shipping.png" />
+
+
+    <h2> Please fill out your information below </h2>
+
+
+
+   <h4> <p>
+   	<img src = "data:image/png;base64,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"/>
+
+</p>
+    </h4>
+
+
+
+</div>
+<div class="inputDiv">
+				<!-- OUR FORM -->
+				<form action="." method="POST" id="lookup_form" role="form">
+				<table class="inputTable"><tbody>
+				<tr><td class="subHeader" style="padding-bottom:1px"></td></tr>
+				<h4>
+					Address:
+				</h4>
+				<tr><td><div id="lu_address1-group" class="form-group">
+							<input type="text" class="form-control" name="lu_address1" id="lu_address1" placeholder="Address1*" style="height:auto;">
+							</div></td></tr>
+
+				<tr><td><div id="lu_address2-group" class="form-group">
+							<input type="text" class="form-control" name="lu_address2" id="lu_address2" placeholder="Address2" style="height:auto;">
+							</div></td></tr>
+					
+				<tr><td><div id="lu_city-group" class="form-group">
+							<input type="text" class="form-control" name="lu_city" id="lu_city" placeholder="Enter City*" style="height:auto;">
+							</div></td></tr>
+
+				<tr><td><div id="lu_state-group" class="form-group">
+							<input type="text" class="form-control" name="lu_state" id="lu_state" placeholder="Enter State*" style="height:auto;">
+							</div></td></tr>
+
+				<tr><td><div id="lu_postal_code-group" class="form-group">
+							<input type="text" class="form-control" name="lu_postal_code" id="lu_postal_code" placeholder="Enter Postal Code*" style="height:auto;">
+							</div></td></tr>
+				<tr><td>
+				<button type="submit" class="btn btn-success gsButton blue" id="lu_submit">Validate </button></td></tr></tbody></table>
+				</form></div>
+		<br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+ 
+        {% for message in messages %}
+            {% if "Error" not in message[1]: %}
+                <div class="alert alert-info" style="color:green">
+				{{ message[1] }}
+                </div>
+            {% endif %}
+ 
+            {% if "Error" in message[1]: %}
+                <div class="alert alert-warning" style="color:red">
+                {{ message[1] }}
+                </div>
+            {% endif %}
+        {% endfor %}
+            {% endif %}
+        {% endwith %}
+</body>
+</html>
